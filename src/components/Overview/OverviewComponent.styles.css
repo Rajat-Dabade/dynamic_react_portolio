@@ -1,0 +1,77 @@
+.overview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 4rem 0;
+
+  .overview-content {
+    width: 750px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+
+    > h4 {
+      font-size: 1rem;
+      letter-spacing: 3px;
+      font-weight: 400;
+    }
+
+    > h3 {
+      font-size: 1.9rem;
+      line-height: 2.5rem;
+    }
+
+    > p {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      letter-spacing: 0.8px;
+      font-weight: 300;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .overview {
+    .overview-content {
+      width: 100%;
+      padding: 0 0rem;
+      gap: 1rem;
+
+      > h4 {
+        font-size: 0.8rem;
+      }
+
+      > h3 {
+        font-size: 1.5rem;
+      }
+
+      > p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .overview {
+    .overview-content {
+      width: 100%;
+      padding: 0 0rem;
+      gap: 1rem;
+
+      > h4 {
+        font-size: 0.8rem;
+      }
+
+      > h3 {
+        font-size: 1.5rem;
+      }
+
+      > p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

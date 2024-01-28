@@ -1,0 +1,37 @@
+.card {
+  width: 300px;
+  margin: 0 1rem;
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+
+    .card-content {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .divider {
+        height: 25px;
+        width: 1px;
+        background-color: black;
+      }
+
+      > h4 {
+        font-size: 1.3rem;
+        font-weight: bold;
+      }
+    }
+
+    > p {
+      margin-top: 5px;
+      margin-left: 10px;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    margin: 1rem 0;
+  }
+}
